@@ -1,28 +1,11 @@
-# Shopping Cart #
+import React from 'react';
 
-## Trying to build a shopping cart using bootstrap and react.js ##
+class Navbar extends React.Component {
 
-# 1. Introduction
-### This documentation provides an overview of a shopping cart application built using Bootstrap and React. In this project, I have implemented a user-friendly interface and functional cart features.###
-
-* Project setup *
-### 1. React Installation
-First we need to set up a new React Project. To create a new react application we have to use
-`npx create-react-app shopping-cart`
-<br>
-<br>
-`cd shoppingCart`
-<br>
-`npm start`
-###
-
-## Bootstrap ##
-
-### To use bootstrap ###
-`npm install bootstrap@5.3.3`
-
-## For Navigation ##
-```<nav className="navbar navbar-expand-lg navbar-light bg-light">
+  render() {
+    return (
+      <div>
+        <nav className="navbar navbar-expand-lg navbar-light bg-light">
           <a className="navbar-brand" href="#">
             Navbar
           </a>
@@ -96,18 +79,9 @@ First we need to set up a new React Project. To create a new react application w
             </form>
           </div>
         </nav>
-```
+      </div>
+    );
+  }
+}
 
-
-### used this code and covert it using html to jsx converter ###
-
-
-
-
-
-
-
-
-
-
-
+export default Navbar;
