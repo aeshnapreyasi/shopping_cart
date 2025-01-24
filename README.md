@@ -21,6 +21,9 @@ First we need to set up a new React Project. To create a new react application w
 ### To use bootstrap ###
 `npm install bootstrap@5.3.3`
 
+
+##Step - 1: ##
+<br>
 ## For Navigation ##
 ```<nav className="navbar navbar-expand-lg navbar-light bg-light">
           <a className="navbar-brand" href="#">
@@ -99,7 +102,71 @@ First we need to set up a new React Project. To create a new react application w
 ```
 
 
-### used this code and covert it using html to jsx converter ###
+## used this code and covert it using html to jsx converter ##
+
+## added product details in  ** ProductList.jsx **  file ##
+<br>
+<br>
+
+** Purpose : **
+## This component is responsible for displaying a list of Products dynamically. It takes
+in a list of products and renders them using the Product component. ##
+
+** Props : **
+<br>
+### 1.products: An array of product objects that contains the product data. It the products prop is not an array, it displays
+an error message. ##
+<br>
+
+ 2.IncrementQuantity: A fucntion passed as a prop that allows the user to increase the quantity of a product in the cart. 
+<br>
+
+ 3. decrementQuantity: A function passed as a prop that allows the user to decrease the quantity of a product in the cart. ###
+<br>
+
+** Logic: **
+<br>
+### 1.The component first checks if the products prop is an array. If not, an error message is displayed.
+<br>
+2. if the products array is valid, it maps through the list of products and renders a Product component for each item.
+<br>
+3.Each Product component receives the product, IncrementQuantity, and decrementQuantity props. ###
+
+** Renderig **
+### 1. The component iterates through the  products array and passes each products's data (along with quantity control fucntions) 
+to the Product component.
+<br>
+2. The key prop is provided for each product to ensure optimal rendering and avoided warnings from React. ###
+
+## Added product details in  ** Product.jsx **  file ##
+
+### Product Component Description: ###
+
+### ** Purpose: ** This component is responsible for displaing individual product details, including the name, price, quantity, and a quantity control 
+feature (increment and decrement). 
+<br>
+<br>
+
+** Pros: **
+<br> 
+1. ** Product: ** Contains the product details such as id, name, price, and quantity.
+<br>
+2. ** IncrementQuantity: ** A fucntion passed as prop that increses the quantity of the product whent the "+" button is clicked.
+<br>
+3. ** decrementQuantity: ** A fucntion passed as a prop that decreses the quantity of the product wheb the "-" button is clicked.
+<br>
+<br>
+
+** UI: **
+1. utilizes a btn-group to manage the quantity control.
+<br>
+2. Displays the product quantity with the quantity value and allows updatig via buttons. ###
+
+
+
+
+
+
 
 
 
